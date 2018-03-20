@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <!--qq浏览器下强制横盘或者竖屏显示-->
+  <meta name="x5-orientation" content="portrait" />
+  <!--qq浏览器下是否可以全屏-->
+  <meta name="x5-fullscreen" content="true" />
+  <!--UC浏览器下强制横盘或者竖屏显示-->
+  <meta name="screen-orientation" content="portrait" />
+  <!--UC浏览器下是否可以全屏-->
+  <meta name="full-screen" content="yes" />
+  <!--是否禁止识别手机和邮箱-->
+  <meta name="format-detection" content="telephone=yes, email=no" />
+  <title>猫</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="../static/font/iconfont.css" />
+  <link rel="stylesheet" href="../static/css/public.css" />
+  <link rel="stylesheet" href="../static/css/swiper.min.css" />
+  <link rel="stylesheet" href="../static/css/hometown-cat.css" />
+  <!--JS-->
+  <script type="text/javascript" src="../static/js/flexible.js"></script>
+  <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/js/ckeditor/ckeditor.js"></script>
+  <script type="text/javascript" src="../static/js/dragula.js"></script>
+  <script type="text/javascript" src="../static/js/swiper.min.js"></script>
+  <script type="text/javascript" src="../static/js/hometown-cat.js"></script>
+  <style class="kbj-style" media="screen">
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="./hometown-index.html">
+          <img src="../static/img/hometown-logo.png" alt="logo" />
+      </a>
+    </div>
+    <div class="menu">
+      <nav>
+        <div class="close">
+          <i class="icon iconfont icon-close"></i>
+        </div>
+        <a class="active index" href="./hometown-index.html">首页</a>
+        <a class="active" href="./hometown-recall.html">回忆</a>
+        <a class="active" href="./hometown-cat.html">猫</a>
+      </nav>
+      <div class="menu-btn">
+        <i class="icon iconfont icon-menu"></i>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="space-fill padding-fill" tabindex="0">
+      <div class="space-fill-container">
+        <div class="content">
+          <div class="space-fill-ball"></div>
+        </div>
+      </div>
+    </div>
+    <div class="move-container" id="left-lovehandles">
+      <div class="carousel1">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide" href="javascript:;"><img src="../static/img/wx468738.jpg" /></a>
+          </div>
+          <div id="left">
+            <i class="icon iconfont icon-chevronleft"></i>
+          </div>
+          <div id="right">
+            <i class="icon iconfont icon-chevronright"></i>
+          </div>
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+      </div>
+      <div class="describe1">
+        <div id="describe1" class="dec kbj-editor" contenteditable="true">
+          <h3>大自然</h3>
+          <p>凰山，春来新绿遍野，如雾如烟，那可人的绿色呼之欲出，象要流淌一般，百卉千芳，竞相争妍，蜂来蝶舞，往来翩跹。盛开的杜鹃花如跳动的火焰，掩映在苍松翠柏之间，鸟语花香。曲径通幽处百泉涌生，泉挂石岩之上，成瀑布清流，虽不声势浩大轰然壮观，却灵动富有诗意，别有韵致。骄阳烈日下挣脱山岩的怀抱，带着清凉带着清新，不急不缓地，似流淌似飘落，如草原上热情的洁白的哈达欢迎八方来客，向你舞动着好似是欢迎您的到来，让人感到格外的亲切！</p>
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+      </div>
+    </div>
+    <div class="space-fill bottom-fill" tabindex="0">
+      <div class="space-fill-container">
+        <div class="content">
+          <div class="space-fill-ball"></div>
+        </div>
+      </div>
+      <span class="handle"></span>
+      <div class="delete" onclick="$(this).parent().remove()">
+        <i class="icon iconfont icon-delete"></i>
+      </div>
+    </div>
+  </div>
+  <script src="../static/js/example.min.js"></script>
+</body>
+
+</html>

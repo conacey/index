@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <!--qq浏览器下强制横盘或者竖屏显示-->
+  <meta name="x5-orientation" content="portrait" />
+  <!--qq浏览器下是否可以全屏-->
+  <meta name="x5-fullscreen" content="true" />
+  <!--UC浏览器下强制横盘或者竖屏显示-->
+  <meta name="screen-orientation" content="portrait" />
+  <!--UC浏览器下是否可以全屏-->
+  <meta name="full-screen" content="yes" />
+  <!--是否禁止识别手机和邮箱-->
+  <meta name="format-detection" content="telephone=yes, email=no" />
+  <title>家</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="../static/font/iconfont.css" />
+  <link rel="stylesheet" href="../static/css/public.css" />
+  <link rel="stylesheet" href="../static/css/hometown-index.css" />
+  <!--JS-->
+  <script type="text/javascript" src="../static/js/flexible.js"></script>
+  <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/js/ckeditor/ckeditor.js"></script>
+  <script type="text/javascript" src="../static/js/dragula.js"></script>
+  <script type="text/javascript" src="../static/js/swiper.min.js"></script>
+  <script type="text/javascript" src="../static/js/hometown-index.js"></script>
+  <style class="kbj-style" media="screen"></style>
+  <style media="screen">
+    html,body{
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="./hometown-index.html">
+          <img src="../static/img/hometown-logo.png" alt="logo" />
+      </a>
+    </div>
+    <div class="menu">
+      <nav>
+        <div class="close">
+          <i class="icon iconfont icon-close"></i>
+        </div>
+        <a class="active index" href="./hometown-index.html">首页</a>
+        <a class="active" href="./hometown-recall.html">回忆</a>
+        <a class="active" href="./hometown-cat.html">猫</a>
+      </nav>
+      <div class="menu-btn">
+        <i class="icon iconfont icon-menu"></i>
+      </div>
+    </div>
+  </header>
+  <div class="pic1">
+    <div class="bg-pic" >
+      <img src="../static/img/wx344382.jpg" alt="" />
+    </div>
+    <div class="poem">
+      <div id="main-describe" class="dec kbj-editor" contenteditable="true">
+        <h3>秋夜曲 王维</h3>
+        <h3>桂魄初生秋露微,</h3>
+        <h3>轻罗已薄未更衣.</h3>
+        <h3>银筝夜久殷勤弄,</h3>
+        <h3>心怯空房不忍归.</h3>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="space-fill padding-fill" tabindex="0">
+      <div class="space-fill-container">
+        <div class="content">
+          <div class="space-fill-ball"></div>
+        </div>
+      </div>
+    </div>
+    <div class="move-container" id="left-lovehandles">
+      <div class="describe1">
+        <div id="describe1" class="dec kbj-editor" contenteditable="true">
+          <h3>故乡的美</h3>
+          <p>“迷人的粉墙黛瓦、小桥流水”这便是对家乡晚春最恰当形容。家乡的晚春，最迷人的不再只是花。展望苍穹那无尽的宽广，湛蓝的色泽，白皙的光亮，看那调皮的燕子，轻盈地掠过平静的湖面，引起层层涟漪。树上的嫩叶，宛然一个个忍俊不禁的笑脸。在金色的琴弦下，演奏着她们的生日宴会。一座古韵依旧的老城翼然眼帘，拾级而上，青山绿水，家乡之景，美不胜收。</p>
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+      </div>
+      <div class="space-fill content-fill" tabindex="0">
+        <div class="space-fill-container">
+          <div class="content">
+            <div class="space-fill-ball"></div>
+          </div>
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+      </div>
+      <div class="special-pic-group">
+        <div class="bg-pic clearfix">
+          <img src="../static/img/wx468740.jpg" alt="" />
+          <img src="../static/img/wx468741.jpg" alt="" />
+          <img src="../static/img/wx468742.jpg" alt="" />
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+      </div>
+      <div class="space-fill content-fill" tabindex="0">
+        <div class="space-fill-container">
+          <div class="content">
+            <div class="space-fill-ball"></div>
+          </div>
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+      </div>
+      <div class="describe2 clearfix">
+        <div id="describe2" class="dec kbj-editor" contenteditable="true">
+          <h3>我的表妹</h3>
+          <p>表妹十分可爱。她，长着肥嘟嘟的脸蛋，两道曲眉就好似凌空高悬的确弯新月。一双水灵灵的大眼睛忽闪忽闪的，最引的注目的是镶嵌在脸上的小酒窝，一笑就露出来，特别惹的喜爱。谁见了都要捏一下她的脸。
+表妹有着长长的头发，辫子也梳得整整齐齐。每天都带着我送给她的头花，虽然头花已经很破旧了，不过她还是一直戴着。她说：“我喜欢姐姐，也喜欢姐姐给的头花。”你听,多有意思。</p>
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+      </div>
+      <div class="space-fill content-fill" tabindex="0">
+        <div class="space-fill-container">
+          <div class="content">
+            <div class="space-fill-ball"></div>
+          </div>
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+      </div>
+      <div class="double-pic1">
+        <div class="image1">
+          <img src="../static/img/wx349508.jpg" alt="" />
+        </div>
+        <div class="image2">
+          <img src="../static/img/wx349512.jpg" alt="" />
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+        <div class="change" onclick="$(this).parent().toggleClass('antitone')">
+          <i class="icon iconfont icon-swaphoriz"></i>
+        </div>
+      </div>
+      <div class="double-dec1">
+        <div id="double-dec1-1" class="dec kbj-editor double-dec-1" contenteditable="true">
+          <h3>荷叶</h3>
+          <p>静静的湖面上布满了碧翠欲滴的荷叶，像是插满了密密麻麻的翡翠伞似的，把湖面盖的严严实实的。那片片荷叶，像撑开的一张张绿伞，有的轻浮于湖面，有的亭立在碧波之上，似层层绿浪，如片片翠玉。</p>
+        </div>
+        <div id="double-dec1-2" class="dec kbj-editor double-dec-2" contenteditable="true">
+          <h3>荷花</h3>
+          <p>翠绿的荷叶丛中，亭亭玉立的荷花，像一个个披着轻沙在湖上沐浴的仙女，含笑伫立,娇羞欲语；花瓣，洁白如玉，花里托着深绿色莲蓬，莲蓬向上的一面有许多小孔，里面睡着荷花的种子。</p>
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+        <div class="change" onclick="$(this).parent().toggleClass('antitone')">
+          <i class="icon iconfont icon-swaphoriz"></i>
+        </div>
+      </div>
+      <div class="double-pic2">
+        <div class="image1">
+          <img src="../static/img/wx490244.jpg" alt="" />
+        </div>
+        <div class="image2">
+          <img src="../static/img/wx463125.jpg" alt="" />
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+        <div class="change" onclick="$(this).parent().toggleClass('antitone')">
+          <i class="icon iconfont icon-swaphoriz"></i>
+        </div>
+      </div>
+      <div class="double-dec2">
+        <div id="double-dec2-1" class="dec kbj-editor double-dec-1" contenteditable="true">
+          <h3>秋天</h3>
+          <p>树木都发芽了，带着一点点新绿，再加上四处都有花儿的衬托，更加的美不胜收。早晨，当你睁开朦胧的睡眼时，就会听到小鸟欢快的歌声，还能闻到花儿散发处的清香。</p>
+        </div>
+        <div id="double-dec2-2" class="dec kbj-editor double-dec-2" contenteditable="true">
+          <h3>家家户户</h3>
+          <p>秋天，到处都洋溢着丰收的喜悦，金色的海洋里，伴随着阵阵稻香，有多少人在不停地收割着自家的劳动果实。路边火红火红的枫叶，宛如一个害羞的小姑娘。</p>
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+        <div class="change" onclick="$(this).parent().toggleClass('antitone')">
+          <i class="icon iconfont icon-swaphoriz"></i>
+        </div>
+      </div>
+      <div class="double-pic3">
+        <div class="image1">
+          <img src="../static/img/wx343329.jpg" alt="" />
+        </div>
+        <div class="image2">
+          <img src="../static/img/wx343339.jpg" alt="" />
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+        <div class="change" onclick="$(this).parent().toggleClass('antitone')">
+          <i class="icon iconfont icon-swaphoriz"></i>
+        </div>
+      </div>
+      <div class="double-dec3">
+        <div id="double-dec3-1" class="dec kbj-editor double-dec-1" contenteditable="true">
+          <h3>爷爷</h3>
+          <p>爷爷很聪明，小学的时候只要课后有打星号的难题，我就去问他，然后拿到班上去炫耀说我爷爷是大学生哩！爷爷还会画画，但是画的不是牛就是马，我就常让他画些别的，可他总是笑着说他只会画这个。</p>
+        </div>
+        <div id="double-dec3-2" class="dec kbj-editor double-dec-2" contenteditable="true">
+          <h3>姥姥</h3>
+          <p>我也爱戴奶奶，我觉得她是和蔼的。小学时候，奶奶就负责我的午饭。那时候挑食，很少东西能对得三我的胃口，只是喜欢吃螃蟹。吃饭的时候总是很细心地把蟹肉挑出来，放在醋里沾一下再送到我嘴里。</p>
+        </div>
+        <span class="handle"></span>
+        <div class="delete" onclick="$(this).parent().remove()">
+          <i class="icon iconfont icon-delete"></i>
+        </div>
+        <div class="change" onclick="$(this).parent().toggleClass('antitone')">
+          <i class="icon iconfont icon-swaphoriz"></i>
+        </div>
+      </div>
+      <div class="space-fill paddingBottom-fill" tabindex="0">
+        <div class="space-fill-container">
+          <div class="content">
+            <div class="space-fill-ball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="end">
+    <div class="line">
+      <hr />
+      <div class="delete" onclick="$(this).parent().remove()">
+        <i class="icon iconfont icon-delete"></i>
+      </div>
+    </div>
+    <div class="space-fill paddingBottom-fill" tabindex="0">
+      <div class="space-fill-container">
+        <div class="content">
+          <div class="space-fill-ball"></div>
+        </div>
+      </div>
+    </div>
+    <div class="end-dec">
+      <div id="end" class="dec kbj-editor" contenteditable="true">
+        <h3>结束</h3>
+      </div>
+      <div class="delete" onclick="$(this).parent().remove()">
+        <i class="icon iconfont icon-delete"></i>
+      </div>
+    </div>
+  </div>
+  <div class="space-fill bottom-fill" tabindex="0">
+    <div class="space-fill-container">
+      <div class="content">
+        <div class="space-fill-ball"></div>
+      </div>
+    </div>
+  </div>
+  <script src="../static/js/example.min.js"></script>
+</body>
+
+</html>

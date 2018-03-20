@@ -1,0 +1,91 @@
+//拖拽的动画
+.gu-mirror {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition:all .3s ease-in;
+}
+
+.handle {
+    padding: 0 5px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: move;
+}
+
+.gu-mirror {
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+    opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=10);
+    transition:all .3s ease-in;
+}
+
+.gu-hide {
+    display: none !important;
+
+}
+
+.gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+
+}
+
+.gu-transit {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=40);
+    transition:all 1s ease-in;
+}
+
+.animated {
+    animation-duration: .3s;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounceIn {
+    from,
+    to {
+        animation-timing-function: cubic-bezier(0.694, 0, 0.335, 1.000);
+    }
+    from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.bounceIn {
+    animation-name: bounceIn;
+}
+
+@keyframes bounceOut {
+    from,
+    to {
+        animation-timing-function: cubic-bezier(0.694, 0, 0.335, 1.000);
+    }
+    from {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+    to {
+        opacity: 0;
+        transform: scale3d(0, 0, 0);
+    }
+}
+
+.bounceOut {
+    animation-name: bounceOut;
+}
